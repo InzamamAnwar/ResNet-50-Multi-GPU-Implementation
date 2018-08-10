@@ -1,1 +1,1 @@
-# ResrNet-50-Multi-GPU-Implementation
+# ResNet-50-Multi-GPU-Implementation
