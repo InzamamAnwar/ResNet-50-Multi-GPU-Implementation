@@ -19,7 +19,7 @@ def evaluate(filename, model_dir, is_test):
 
         # compute softmax & accuracy of logits
         predictions = tf.nn.softmax(logits=logits)
-        accuracy = tf.equal(tf.argmax(input=predictions, axis=1), tf.argmax(input=predictions, axis=1))
+        accuracy = tf.equal(tf.argmax(input=predictions, axis=1), tf.argmax(input=label, axis=1))
 
         # restore model
         with tf.Session() as sess:
